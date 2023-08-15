@@ -1,6 +1,5 @@
-City Page:
-
-•   the city’s population
+City Page: 
+•   the city’s population 
 
 •   the year the city was incorporated
 
@@ -33,7 +32,7 @@ EVERY PAGE!
 
 1. DONE - a link that opens an external website in a new window or tab using the target attribute
 
-2. ORDERED LIST - an HTML-coded ordered list with at least three list items
+2. DONE - an HTML-coded ordered list with at least three list items
 
 3. DONE - an HTML-coded unordered list with at least three list items
 

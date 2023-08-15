@@ -150,6 +150,15 @@ aside {
     border-radius: 10px;
 }
 
+.avg-income {
+    border: 1px solid var(--primary-dark);
+}
+
+th, td {
+    border: 1px solid var(--primary-dark);
+    padding: 5px;
+} 
+
 footer {
     min-height: 100px;
     background-color: var(--accent-light);
