@@ -32,10 +32,10 @@
 /* IDs */
 
 #explore-oregon {
+    margin: 60px 0px;
     font-size: 58px;
-    margin-bottom: 58px;
     font-weight: bold;
-    color: var(--primary-dark)
+    color: var(--primary-dark);
 }
 
 #oregon-header {
@@ -87,9 +87,16 @@ a.nav-link {
     font-size: 18px;
 }
 
+a.nav-link:hover {
+    color: var(--primary-light)!important;
+    border-bottom: 3px solid var(--accent)!important;
+}
+
 /* Page layout */
 
 .wrapper {
+    display: flex;
+    flex-direction: row;
     width: 70vw;
     height: 100%;
     overflow: scroll;
@@ -116,7 +123,7 @@ main {
 
 main img {
     padding-right: 26px;
-    margin-bottom: 24px;
+    margin-bottom: 70px;
 }
 
 .paragraph {
@@ -128,6 +135,8 @@ main img {
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
     padding: 50px;
     max-width: 25%;
     min-width: 25%;
@@ -143,33 +152,60 @@ aside {
 
 footer {
     min-height: 100px;
-    background-color: aqua;
+    background-color: var(--accent-light);
     border-top: 2px solid var(--primary-dark);
 }
 
-/* Media Queries 
+/* Media Queries */
 
-@media screen and (max-width:1570px) {
+@media screen and (max-width:1450px) and (min-width: 1000px) {
 
-.wrapper {
-    display: block;
-}
+    .wrapper {
+        display: block;
+    }
 
-main {
-    border: none;
-    min-width: 100%;
-}
+    main {
+        border: none;
+        min-width: 100%;
+    }
 
-aside {
-    display: block!important;
-    min-width: 100%;
-}
+    aside {
+        display: block!important;
+        min-width: 100%;
+    }
 
-.cities-aside {
-    display: flex;
-    flex-direction: row;
-}
+    .cities-aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .city-aside-info {
+        max-width: 25%;
+        min-width: 15%;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
 
-} */
+} 
+
+@media screen and (max-width: 1000px) {
+
+    .wrapper {
+        display: block;
+    }
     
+    main {
+        border: none;
+        min-width: 100%;
+    }
+    
+    aside {
+        display: block!important;
+        min-width: 100%;
+    } 
+    
+    .cities-aside {
+        display: block;
+    }
+}
