@@ -1,0 +1,62 @@
+
+#form-design {
+    position: relative;
+    height: 1310px;
+    z-index: -1;
+}
+
+#form-design div {
+    background-color: var(--primary-light);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 42%;
+    right: 54%;
+}
+
+#form-design div:first-child {
+    background-color: var(--primary);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 35%;
+    right: 35%;
+    opacity: 0.75;
+}
+
+/* Contact page specific */
+.wrapper-float {
+    width: 70vw;
+    height: 100%;
+    overflow: scroll;
+    margin: auto; 
+    top: var(--header-height);
+}
+
+/* Contact page specific */
+.wrapper-float::-webkit-scrollbar {
+    display: none;
+} 
+
+/* Contact page specific */
+main.float {
+    float: left;
+    height: 100%;
+    border: none;
+}
+
+#fs-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    font-size: 20px;
+    padding: 16px;
+    margin: 12px 12px 12px 0px;
+}
+
+label {
+    font-size: 20px;
+    padding: 12px 12px 12px 0px;
+}

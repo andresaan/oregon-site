@@ -47,9 +47,9 @@ CSS ELEMENTS
 
 •   DONE - a :hover pseudo-class to create a rollover effect for navigation buttons
 
-2.  FLOAT - a float property to position at least one HTML element to the side of another in your web page
+2.  DONE - a float property to position at least one HTML element to the side of another in your web page
 
-3.  ABSOLUTE AND RELATIVE - absolute and relative positioning in at least one area of your web page
+3.  DONE - absolute and relative positioning in at least one area of your web page
 
 4.  each of the following selectors:
 

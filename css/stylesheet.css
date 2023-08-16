@@ -100,7 +100,7 @@ a.nav-link:hover {
 
 .wrapper::-webkit-scrollbar {
     display: none;
-  }
+}
 
 main {
     padding: 24px;
@@ -109,6 +109,7 @@ main {
     border-right: 2px solid var(--primary-dark);
     color: var(--primary-dark);
 }
+
 
 .page-title {
     margin-bottom: 24px;

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oregon</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href="css\stylesheet.css" rel="stylesheet" >
+        <link href="css\contact.css" rel="stylesheet" >
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400;10..48,500;10..48,800&display=swap" rel="stylesheet">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            
+            function DisplayAlert(msg) 
+            {                
+                alert(msg);
+                document.getElementById("contact-submit").disabled = true;
+            }
+            
+            function CompareEmail()
+            {
+                var email1 = document.getElementById("email1").value;
+                var email2 = document.getElementById("email2").value;
+
+                if ((email1 == "") || (email2 == "")) {
+                    return DisplayAlert("Email is empty");
+                }
+            
+               if  (email1.toLowerCase() != email2.toLowerCase()) {       
+                    return DisplayAlert("The email and confirmation fields need to be identical.");
+               } 
+
+                document.getElementById("contact-submit").disabled = false;               
+            }
+        </script>
+    </head>
+
+
+    <body>
+        <header class="bc-accent">
+            <div class="header-container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid p-0">
+                        <a id="oregon-header" class="navbar-brand" href="index.html">Oregon</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse nav-items" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="salem.html">Salem</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="portland.html">Portland</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="eugene.html">Euegene</a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="form.html">Contact</a>
+                                </li>                
+                            </ul>
+                        </div>               
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        
+        <div class="wrapper-float">
+            
+            <main class="float">
+                
+                <section>    
+                    <div class="page-title">
+                        <h1>Ask A Question About Oregon</h1>
+                    </div>
+                    
+                    <div class="form">
+                        <form id="fs-form" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqoezrl" method="post"> 
+                            
+                            <label for="first-name">Full Name</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                            
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                            
+                            <label for="email1">Email Address</label>
+                            <input type="email" name="_replyto" id="email1" placeholder="email@domain.tld" required>
+                            <label for="email2">Confirm Email</label>
+                            <input type="email" name="_replyto2" id="email2" placeholder="email@domain.tld" required onblur="CompareEmail()">
+                    
+                            <label for="question">Ask A Question</label>
+                            
+                            <textarea rows="10" name="question" id="question" placeholder="Type your message here" required></textarea>
+                            
+                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">                   
+                            <input id="contact-submit" type="submit" value="Submit">
+                        </form>
+                    </div>
+
+                </section>
+
+            </main>
+    
+
+            <aside id="form-design">
+                <div></div>
+                <div></div>           
+            </aside>
+
+        </div>
+        
+    </body>
+    <footer>
+        <div class="header-container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0">
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse nav-items" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="salem.html">Salem</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="portland.html">Portland</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="eugene.html">Euegene</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="form.html">Contact</a>
+                            </li>                 
+                        </ul>
+                    </div>               
+                </div>
+            </nav>
+        </div>  
+    </footer>   
+</html> 
