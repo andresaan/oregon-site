@@ -137,7 +137,7 @@ main img {
 aside {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 50px 0px 50px 50px;
     max-width: 25%;
     min-width: 25%;
 }
@@ -150,14 +150,16 @@ aside {
     border-radius: 10px;
 }
 
-.avg-income {
-    border: 1px solid var(--primary-dark);
-}
 
 th, td {
     border: 1px solid var(--primary-dark);
+    border-radius: 10px;
     padding: 5px;
 } 
+
+.empty {
+    border: none!important;
+}
 
 footer {
     min-height: 100px;
