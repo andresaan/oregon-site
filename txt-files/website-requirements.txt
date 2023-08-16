@@ -1,4 +1,4 @@
-City Page: 
+City Page: DONE
 •   the city’s population 
 
 •   the year the city was incorporated
@@ -36,7 +36,7 @@ EVERY PAGE!
 
 3. DONE - an HTML-coded unordered list with at least three list items
 
-4. TABLE - an HTML-coded table consisting of 3–6 columns and 3–6 rows to organize content
+4. DONE - TABLE - an HTML-coded table consisting of 3–6 columns and 3–6 rows to organize content
 
 
 CSS ELEMENTS
@@ -58,3 +58,15 @@ CSS ELEMENTS
 •  DONE - one class selector that is used at least two times to style HTML elements
 
 •  DONE - one ID selector to format specific elements of a page
+
+
+D.  Add a form on one page of your website by doing the following:
+
+Note: The form does not need to include a functional Submit button.
+
+
+•   Include text fields for the user’s first name, the user’s last name, and the user’s email address, as well as a confirmation field for the email address for verification purposes and a text box that allows the user to ask a question.
+
+•   Ensure all fields contain placeholders.
+
+1.  Include JavaScript code that verifies the email fields match when a user enters a second email address.

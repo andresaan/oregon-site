@@ -31,13 +31,6 @@
  
 /* IDs */
 
-#explore-oregon {
-    margin: 60px 0px;
-    font-size: 58px;
-    font-weight: bold;
-    color: var(--primary-dark);
-}
-
 #oregon-header {
     color: var(--primary-dark)!important;
     font-weight: bold;
@@ -68,7 +61,8 @@ body {
 header {
     border-top: 2px solid var(--primary-dark);
     border-bottom: 2px solid var(--primary-dark);
-    
+    top: 0px;
+    position: sticky;
 }
 
 .header-container {
@@ -118,7 +112,14 @@ main {
 
 .page-title {
     margin-bottom: 24px;
-    color: var(--primary-dark)
+    color: var(--primary-dark);
+}
+
+.page-title h1 {
+    margin: 60px 0px;
+    font-size: 58px;
+    font-weight: bold;
+    color: var(--primary-dark);
 }
 
 main img {
@@ -150,7 +151,6 @@ aside {
     border-radius: 10px;
 }
 
-
 th, td {
     border: 1px solid var(--primary-dark);
     border-radius: 10px;
@@ -165,12 +165,35 @@ footer {
     min-height: 100px;
     background-color: var(--accent-light);
     border-top: 2px solid var(--primary-dark);
+    bottom: 0px;
+    position: relative;
 }
 
 /* Media Queries */
 
-@media screen and (max-width:1450px) and (min-width: 1000px) {
+@media screen and (max-width: 1795px) and (min-width: 1650px) {
 
+    li table {
+        position: relative;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 1670px) and (min-width: 1550px) {
+
+    li table {
+        position: relative;
+        right: 40px;
+    }
+}
+
+
+@media screen and (max-width:1550px) and (min-width: 1000px) {
+
+    header {
+        position: static;
+    }
+    
     .wrapper {
         display: block;
     }
@@ -183,6 +206,7 @@ footer {
     aside {
         display: block!important;
         min-width: 100%;
+        padding: 24px;
     }
 
     .cities-aside {
@@ -202,6 +226,22 @@ footer {
 
 @media screen and (max-width: 1000px) {
 
+    header {
+        position: static;
+    }
+
+    .header-container {
+        padding: 10px 24px;
+    }
+
+    #oregon-header {
+        font-size: 25px;
+    }
+
+    .page-title h1 {
+        font-size: 48px; 
+    }
+    
     .wrapper {
         display: block;
     }
@@ -214,6 +254,50 @@ footer {
     aside {
         display: block!important;
         min-width: 100%;
+        padding: 24px 0px;
+    } 
+    
+    .cities-aside {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    header {
+        position: static;
+    }
+
+    .header-container {
+        padding: 10px 24px;
+    }
+
+    #oregon-header {
+        font-size: 25px;
+    }
+
+    .page-title h1 {
+        font-size: 42px; 
+    }
+    
+    .wrapper {
+        display: block;
+    }
+    
+    main {
+        border: none;
+        min-width: 100%;
+        padding: 24px 0px;
+    }
+
+    main img {
+        padding: 0px;
+    }
+    
+    aside {
+        display: block!important;
+        min-width: 100%;
+        padding: 24px 0px;
     } 
     
     .cities-aside {
