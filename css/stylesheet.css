@@ -172,7 +172,7 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 1795px) and (min-width: 1650px) {
+@media screen and (max-width: 1795px) and (min-width: 1670px) {
 
     li table {
         position: relative;
@@ -223,6 +223,14 @@ footer {
     }
 
 } 
+
+@media screen and (max-width: 1280px) {
+
+    a.nav-link {
+        margin: 0px 35px;
+    }
+
+}
 
 @media screen and (max-width: 1000px) {
 
