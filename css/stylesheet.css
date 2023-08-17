@@ -213,13 +213,12 @@ footer {
     .cities-aside {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .city-aside-info {
-        max-width: 25%;
-        min-width: 15%;
-        flex-wrap: wrap;
+        max-width: 45%;
+        min-width: 45%;
         padding: 15px;
     }
 
